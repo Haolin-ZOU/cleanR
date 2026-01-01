@@ -9,8 +9,15 @@ Now, anyone (including you on a different machine) can install your package with
 ```
 # You might need to install {remotes} first
 # install.packages("remotes")
-remotes::install_github("yourusername/cleanR")
+remotes::install_github("Haolin-ZOU/cleanR")
 ```
+```
+install.packages("remotes")
+remotes::install_github("Haolin-ZOU/cleanR")
+library(cleanR)
+?clean_names
+```
+
 If you want to create an environment using Nix that includes this package, use the git_pkgs argument of rix::rix() to generate the right default.nix file.
 如果你想使用 Nix 创建一个包含此软件包的环境，请使用 rix::rix() 的 git_pkgs 参数生成正确的 default.nix 文件。
 
